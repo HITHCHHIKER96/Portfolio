@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c09a87ef9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/images/nav.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi, My name is <span class="purple">Pritam</span>
+                    <div>and I am a Passionate</div>
+                    <!-- <div>Web Developer</div> -->
+                    <span id="element"></span>
+                </div>
+                <div class="rightSection">
+                    <img src="/images/images/bg.png" alt="">
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- ------------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/images/me.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="pink">I am currently pursuing B.Tech in Electronics and Communication Engineering, eager to embark on a career in the software industry. Throughout my engineering journey, I have developed robust problem-solving and analytical skills, which have equipped me to tackle complex challenges effectively. My academic experience has honed my ability to approach problems systematically and devise innovative solutions. I am a quick learner, always eager to acquire new knowledge and skills. Additionally, I possess strong communication skills, enabling me to collaborate effectively with diverse teams and convey technical concepts clearly. My dedication and hard work have been the cornerstones of my academic success, and I am excited to bring this same level of commitment to my professional career. I am passionate about leveraging my technical background and skill set to contribute meaningfully to the software industry.
+                    </p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Coding Profile</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Projects</p> -->
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <a href="https://leetcode.com/u/TOM_3/"><li><span><br>Leetcode</span></li></a>
+                            <a href="https://www.geeksforgeeks.org/user/hitchhiker64/"><li><span>GeeksforGeeks</span><br></li></a>
+                            <a href="https://www.hackerrank.com/profile/pritampravasgho1"><li><span>Hackerrank</span></li></a>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Devlopment</span><br>Web App Development</li>
+                            <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                            <li><span>N/A</span><br>N/A</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>B.Tech in Electronics & Communication Engineering</li>
+                            <li><span>2019 - 2021</span><br>Higher Secondary Examination</li>
+                            <li><span>2013 - 2019</span><br>Secondary Examination</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-------------------- Skills----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Technical Skils</h2>
+                     <li><h3>HTML</h3>
+                        <span class="bar"><span class="html"></span></span>
+                     </li>
+                     <li><h3>CSS</h3>
+                        <span class="bar"><span class="css"></span></span>
+                     </li>
+                     <li><h3>JavaScript</h3>
+                        <span class="bar"><span class="javascript"></span></span>
+                     </li>
+                     <li><h3>JAVA</h3>
+                        <span class="bar"><span class="java"></span></span>
+                     </li>
+                     <li><h3>PYTHON</h3>
+                        <span class="bar"><span class="python"></span></span>
+                     </li>
+                     <li><h3>React</h3>
+                        <span class="bar"><span class="react"></span></span>
+                     </li>
+                    <!-- <a href="#">Rearn More...</a> -->
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, amet ducimus? Placeat laborum ipsum odit.</p>
+                    <a href="#">Rearn More...</a>
+                </div> -->
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>N/A</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas, quisquam dolorum doloremque ipsum expedita.</p>
+                    <a href="#">Rearn More...</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- -----------Portfolio------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/images/work-1.png">
+                    <div class="layer">
+                        <h3>Resturant Website</h3>
+                        <p>Developed a food ordering website with an engaging user interface, integrating image sliders, navigation, and
+                        detailed content sections.</p>
+                        <a href="https://hithchhiker96.github.io/Food-Ordering-Website/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images/work-2.png">
+                    <div class="layer">
+                        <h3>Drum-Kit</h3>
+                        <p>The Drum-Kit project is an interactive web application that simulates a virtual drum set, allowing users to play drum sounds using keyboard keys or mouse clicks. Built with HTML, CSS, and JavaScript, the project showcases event handling and audio integration to deliver a fun and engaging experience. It demonstrates creativity in design and technical skills in front-end development, making it a perfect blend of entertainment and coding.</p>
+                        <a href="https://hithchhiker96.github.io/Drum-Kit-/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, excepturi fugit officia alias officiis aperiam ab minus quas architecto temporibus enim!</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a href="#" class="btn">See More....</a> -->
+        </div>
+    </div>
+    <!-- ----------------Contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <div class="sub-title">Contact Me</div>
+                    <p><i class="fa-regular fa-paper-plane"></i>pritampravasghosh@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9749876221</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://github.com/HITHCHHIKER96"><i class="fa fa-github" style="font-size:36px"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                        <a href="https://www.linkedin.com/in/pritam-ghosh-msit/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/images/FINAL CV (Latest).pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name:" required>
+                        <input type="email" name="email" placeholder="Your Email:" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message:"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Pritam, Made by <i class="fa-solid fa-heart"></i> myself</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['UG Student of ECE', 'Web Developer', 'Coding Enthusiast'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
